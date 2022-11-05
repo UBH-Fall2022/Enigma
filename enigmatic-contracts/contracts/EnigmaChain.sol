@@ -23,6 +23,7 @@ contract EnigmaChain {
         for (uint256 i = 0; i < verrifiers.length; i++) {
             if (verrifiers[i] == tx.origin) {
                 contributors[contributor] += 1;
+                contributors[tx.origin] += 1;
                 return true;
             }
         }
