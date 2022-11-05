@@ -134,3 +134,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
 #     ]
 # }
+
+GANACHE_URL = "HTTP://127.0.0.1:7545"
+ETH_USER_ADDRESS = os.environ.get('ETH_USER_ADDRESS', "0xc6DE5374051EC1F4Ac305ffb3e5DdfeC8fD859c8")
+ETH_PRIVATE_KEY = os.environ.get("ETH_PRIVATE_KEY", "715bcd1ca05d7cca9845921e16a11cf79279d33a2cc7f5369cc53e2f375fd598")
+NETWORK_ID = "5777"
