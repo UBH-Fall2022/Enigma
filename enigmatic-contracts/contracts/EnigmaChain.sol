@@ -34,12 +34,21 @@ contract EnigmaChain {
         verifiers = [tx.origin];
         
     }
-    /*
-    function make() {
+    
+    function promoteAsVerifier() public returns (bool) {
         //If tx sender is owner
         // Add value to verifiers
+        if(msg.sender == tx.origin) {
+            if(isVerifierExists(msg.sender))
+            {
+            verifiers.push(msg.sender);
+            return true;
+            }
+            
+        }
+        return false;
     }
-    */
+    
 
 
     function addContrib(address contributor) public returns (bool) {
@@ -58,6 +67,16 @@ contract EnigmaChain {
         }
         return false;
     }
+
+function isVerifierExists(address verifier) public view returns (bool) {
+    for (uint i = 0; i < verifiers.length; i++) {
+        if (verifiers[i] == verifier) {
+            return true;
+        }
+    }
+
+    return false;
+}
 
     function sendCoin(address receiver, uint256 amount)
         public
