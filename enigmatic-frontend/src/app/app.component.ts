@@ -11,6 +11,6 @@ export class AppComponent {
   title = 'enigmatic-frontend';
   weight: Observable<number>;
   constructor(public contractService: ContractService) {
-    this.weight = contractService.senderAddress.pipe(switchMap((address)=>contractService.getWeightOfContributor(address)));
+    this.weight = contractService.senderAddress.pipe(switchMap((address) => contractService.getWeightOfContributor(address)));
   }
 }

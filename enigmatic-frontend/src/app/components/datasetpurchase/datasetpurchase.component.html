@@ -1,0 +1,21 @@
+<h1>Purchase a dataset</h1>
+Dataset Stats:
+<table>
+    <tr>
+        <td>Total database size</td>
+        <td>{{contributorSize|async}}</td>
+    </tr>
+</table>
+
+<table border="1px black">
+    <tr>
+        <th>Contributor</th>
+        <th>Weight</th>
+    </tr>
+    <tr *ngFor="let cont of allContributors|async">
+        <td>{{cont.address}}</td>
+        <td>{{cont.weight}}</td>
+    </tr>
+</table>
+
+<button (click)="purchaseDatasetClicked()">Purchase this dataset</button>
