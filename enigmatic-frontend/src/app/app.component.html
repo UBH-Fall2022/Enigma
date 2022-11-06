@@ -1,4 +1,4 @@
-Testapp
+<!-- Testapp
 <table border="1px black">
   <tr>
     <td>Addresses</td>
@@ -12,10 +12,39 @@ Testapp
     <td>Weight</td>
     <td>{{weight|async}}</td>
   </tr>
-  <!-- TODO: <tr>
+  TODO: <tr>
     <td>Account Balance</td>
     <td>{{bala</td>
-  </tr> -->
-</table>
-<a routerLink="">Home</a>
-<router-outlet></router-outlet>
+  </tr> 
+</table> -->
+
+
+
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">ENIGMA Privacy Guard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="datasetpurchase">Purchase Dataset</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+      </ul>
+    </div>
+  </nav>
+
+  <a routerLink="">Home</a>
+  <router-outlet></router-outlet>
+</div>

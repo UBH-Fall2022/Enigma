@@ -10,12 +10,12 @@ Dataset Stats:
 <table border="1px black">
     <tr>
         <th>Contributor</th>
-        <th>Weight</th>
+        <th>Cost to pay</th>
     </tr>
     <tr *ngFor="let cont of allContributors|async">
         <td>{{cont.address}}</td>
-        <td>{{cont.weight}}</td>
+        <td>{{cont.weight*.1}} GAN</td>
     </tr>
 </table>
-
+<p>Total cost of the dataset: {{((contributorSize|async) || 0) * 0.1}} GAN</p>
 <button (click)="purchaseDatasetClicked()">Purchase this dataset</button>
