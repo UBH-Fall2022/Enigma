@@ -9,7 +9,7 @@
 - [Code of Conduct](https://drive.google.com/file/d/1RH_TtRu6EOHSbOoiSj2h1Q4jswtVILzE/view)
 
 ## Our Inspiration
-Data privacy is a huge concern with likes of data collection from many companies for persona based advertisement, dataset for training machine learning models, Artificial Intelligence etc. This problem is deeply rooted in the way we create digital identity. Our identity works on single point of authentication using federated identity services which is very flawed mechanishm of identifcation. Because, this identity provider serves as single point for accessing multiple services and is prone to data breach. So blockchain based Self-Sovereign Identity helps us tackle this issue.
+Data privacy is a huge concern with likes of data collection from many companies for persona based advertisement, dataset for training machine learning models, Artificial Intelligence etc. This problem is deeply rooted in the way we create digital identity. Our identity works on single point of authentication using federated identity services which is very flawed mechanism of identification. Because, this identity provider serves as single point for accessing multiple services and is prone to data breach. So blockchain based Self-Sovereign Identity helps us tackle this issue.
 
 
 ## What it does
