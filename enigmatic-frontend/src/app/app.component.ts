@@ -10,7 +10,9 @@ import { ContractService } from './services/contract.service';
 export class AppComponent {
   title = 'enigmatic-frontend';
   weight: Observable<number>;
+  myaddress: Observable<string>;
   constructor(public contractService: ContractService) {
+    this.myaddress = contractService.senderAddress;
     this.weight = contractService.senderAddress.pipe(switchMap((address) => contractService.getWeightOfContributor(address)));
   }
 }

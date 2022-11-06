@@ -1,20 +1,17 @@
 <h1>Account Information</h1>
 <table class="table">
-    <tr>
-        <td>Attribute</td>
-        <td>Value</td>
-    </tr>
-
-    <tr>
-        <td>Account</td>
-        <td>{{contractService.senderAddress|async}}</td>
-    </tr>
-    <tr>
-        <td>Network ID</td>
-        <td>{{contractService.networkId|async}}</td>
-    </tr>
-    <tr>
-        <td>Dataset contribution</td>
-        <td>{{weight|async}}</td>
-    </tr>
+    <tbody>
+        <tr>
+            <td>Account</td>
+            <td>{{contractService.senderAddress|async}}</td>
+        </tr>
+        <tr>
+            <td>Network ID</td>
+            <td>{{contractService.networkId|async}}</td>
+        </tr>
+        <tr>
+            <td>Dataset contribution</td>
+            <td>{{weight|async}}</td>
+        </tr>
+    </tbody>
 </table>

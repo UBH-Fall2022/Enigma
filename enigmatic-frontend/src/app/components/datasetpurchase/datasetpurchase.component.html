@@ -8,14 +8,18 @@ Dataset Stats:
 </table>
 
 <table class="table">
-    <tr>
-        <th>Contributor</th>
-        <th>Cost to pay</th>
-    </tr>
-    <tr *ngFor="let cont of allContributors|async">
-        <td>{{cont.address}}</td>
-        <td>{{(cont.weight*.1).toFixed(2)}} GAN</td>
-    </tr>
+    <thead class="thead-dark">
+        <tr>
+            <th>Contributor</th>
+            <th>Cost to pay</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cont of allContributors|async">
+            <td>{{cont.address}}</td>
+            <td>{{(cont.weight*.1).toFixed(2)}} GAN</td>
+        </tr>
+    </tbody>
 </table>
 <p>Total cost of the dataset: {{(((contributorSize|async) || 0) * 0.1).toFixed(2)}} GAN</p>
 <button (click)="purchaseDatasetClicked()" class="btn btn-primary">Purchase this dataset</button>
