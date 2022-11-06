@@ -9,10 +9,14 @@
 - [Code of Conduct](https://drive.google.com/file/d/1RH_TtRu6EOHSbOoiSj2h1Q4jswtVILzE/view)
 
 ## Our Inspiration
-Data privacy is a huge concern with likes of data collection from many companies for persona based advertisement, dataset for Artificial Intelligence etc. We need a solution which can 
+Data privacy is a huge concern with likes of data collection from many companies for persona based advertisement, dataset for training machine learning models, Artificial Intelligence etc. This problem is deeply rooted in the way we create digital identity. Our identity works on single point of authentication using federated identity services which is very flawed mechanishm of identifcation. Because, this identity provider serves as single point for accessing multiple services and is prone to data breach. So blockchain based Self-Sovereign Identity helps us tackle this issue.
+
+
 ## What it does
+Using Self-Sovereign Identity (SSI) from Sovrin Foundation, we can tackle to probelm from single identity provider. What its does is, we are not relying on single identity provider instead, players in SSI identity network will communicate in peer-to-peer fashion. Using Self-Sovereign Identity, Enigma creates digital identity for users, and users can use this for identification accross muitple platforms. We are providing this solution for a one specific use-case of dataset collection and rewarding. Using this users can safegaurd their privacy using DIDs and decide what data to be shared with dataset collectors  
 
 ## How we built it
+
 
 ## Challenges we ran into
 
