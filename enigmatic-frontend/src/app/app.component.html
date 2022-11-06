@@ -18,10 +18,15 @@
           <a class="nav-link" routerLink="checkbalance">Contribution Check</a>
         </li>
       </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a routerLink="checkbalance" class="nav-link">Account: {{((myaddress|async)|| '').substring(3,9)}}</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
 
-<div class="container">
+<div class="container pt-3">
   <router-outlet></router-outlet>
 </div>
