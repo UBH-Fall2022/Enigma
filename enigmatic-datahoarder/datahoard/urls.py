@@ -23,12 +23,15 @@ class DatasetViewSet(viewsets.ModelViewSet):
 
     def create(self, request, *args, **kwargs):
         useraddress = request.data['address']
+        print(f'UserAddress: {useraddress}')
         
         w3 = Web3(Web3.HTTPProvider(settings.GANACHE_URL))
         networkid = settings.NETWORK_ID
         if w3.isConnected():
             abi = smartcontract['abi']
             address  = smartcontract['networks'][networkid]['address']
+            print(f'ABI: {abi}')
+            print(f'address: {address}')
             caller = settings.ETH_USER_ADDRESS
             private_key = settings.ETH_PRIVATE_KEY
             chain_id = w3.eth.chain_id

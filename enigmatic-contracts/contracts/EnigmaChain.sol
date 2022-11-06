@@ -47,17 +47,29 @@ contract EnigmaChain {
         // Adding contributor if transaction is coming from origin
         for (uint256 i = 0; i < verifiers.length; i++) {
             if (verifiers[i] == tx.origin) {
-                contributors[contributor] += 1;
-                contributors[tx.origin] += 1;
-
-                AllContributors[i].contributor = contributor;
-                AllContributors[i].weight += 1;
+                bool found = false;
+                for(uint256 j=0; j<AllContributors.length; j++){
+                    if(AllContributors[j].contributor==contributor) {
+                        AllContributors[j].weight++;
+                        found = true;
+                    }
+                }
+                if(!found) {
+                    ContributorStruct memory newcontrib;
+                    newcontrib.contributor = contributor;
+                    newcontrib.weight = 1;
+                    AllContributors.push(newcontrib);
+                }
                 sizeOfContributors++;
 
                 return true;
             }
         }
         return false;
+    }
+
+    function getsizeOfContributors() public view returns(uint256) {
+        return sizeOfContributors;
     }
 
     function isVerifierExists(address verifier) public view returns (bool) {
@@ -108,5 +120,6 @@ contract EnigmaChain {
                 return contributorObject.weight;
             }
         }
+        return 0;
     }
 }
