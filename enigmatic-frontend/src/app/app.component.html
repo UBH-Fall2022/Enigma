@@ -1,6 +1,7 @@
 Testapp
 <table border="1px black">
-  <tr><td>Addresses</td><td>{{contractService.addresses|async}}</td></tr>
+  <tr><td>Addresses</td><td>{{contractService.senderAddress|async}}</td></tr>
   <tr><td>Network ID</td><td>{{contractService.networkId|async}}</td></tr>
+  <tr><td>Weight</td><td>{{weight|async}}</td></tr>
 </table>
 <router-outlet></router-outlet>

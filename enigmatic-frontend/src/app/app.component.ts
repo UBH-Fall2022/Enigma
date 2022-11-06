@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable, switchMap } from 'rxjs';
 import { ContractService } from './services/contract.service';
 
 @Component({
@@ -8,5 +9,8 @@ import { ContractService } from './services/contract.service';
 })
 export class AppComponent {
   title = 'enigmatic-frontend';
-  constructor(public contractService: ContractService) {}
+  weight: Observable<number>;
+  constructor(public contractService: ContractService) {
+    this.weight = contractService.senderAddress.pipe(switchMap((address)=>contractService.getWeightOfContributor(address)));
+  }
 }
