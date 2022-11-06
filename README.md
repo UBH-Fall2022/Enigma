@@ -7,3 +7,17 @@
 - Your project must be publically available and under source control (organizers need to be able to view your code repository) -  you can use GitHub, GitLab, Bitbucket, or any other code hosting service
 - Projects can not have been submitted to another event, including other hackathons this weekend.
 - [Code of Conduct](https://drive.google.com/file/d/1RH_TtRu6EOHSbOoiSj2h1Q4jswtVILzE/view)
+
+## Our Inspiration
+Data privacy is a huge concern with likes of data collection from many companies for persona based advertisement, dataset for Artificial Intelligence etc. We need a solution which can 
+## What it does
+
+## How we built it
+
+## Challenges we ran into
+
+## Accomplishments that we're proud of
+
+## What we learned
+
+## What's next for Enigma
