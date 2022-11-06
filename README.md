@@ -13,7 +13,7 @@ Data privacy is a huge concern with likes of data collection from many companies
 
 
 ## What it does
-Using Self-Sovereign Identity (SSI) from Sovrin Foundation, we can tackle to probelm from single identity provider. What its does is, we are not relying on single identity provider instead, players in SSI identity network will communicate in peer-to-peer fashion. Using Self-Sovereign Identity, Enigma creates digital identity for users, and users can use this for identification accross muitple platforms. We are providing this solution for a one specific use-case of dataset collection and rewarding. Using this users can safegaurd their privacy using DIDs and decide what data to be shared with dataset collectors  
+Using Self-Sovereign Identity (SSI) from Sovrin Foundation, we can tackle to probelm from single identity provider. What its does is, we are not relying on single identity provider instead, players in SSI identity network will communicate in peer-to-peer fashion. Using Self-Sovereign Identity, Enigma creates digital identity for users, and users can use this for identification accross muitple platforms. We are providing this solution for a one specific use-case of dataset collection and rewarding. Using this users can safegaurd their privacy using DIDs and decide what data to be shared with dataset collectors and then reward them for their contribution to the dataset. Dataset collectors can purchase this dataset for a particular price without compromising any privacy laws which is then used to pay the respective users based on their contribution.
 
 ## How we built it
 
