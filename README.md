@@ -1,3 +1,7 @@
+# Introduction
+Enigma is an end to end data collection and monetization platform for Data points generated during the Digital Identity verification.
+
+Built for Major League Hacking UB HAcking Fall 2022. Recieved the Foundry Digital Best Blockchain hack award.
 
 # Our Inspiration
 
